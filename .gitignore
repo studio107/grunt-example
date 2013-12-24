@@ -1,0 +1,7 @@
+.sass-cache
+.scss-cache
+*.scssc
+*.sassc
+node_modules
+*.iml
+.idea
