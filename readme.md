@@ -1,6 +1,7 @@
 # Installation
 
-`npm install` in static dir
+* Install grunt cli `npm install grunt-cli`
+* Install dependencies `npm install` in static dir
 
 # Compile
 
