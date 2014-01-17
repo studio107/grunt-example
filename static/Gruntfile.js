@@ -52,6 +52,10 @@ module.exports = function(grunt) {
                 options: {
                     livereload: true
                 }
+            },
+            // Watch changes in Gruntfile and reload grunt
+            grunt: {
+                files: ['Gruntfile.js']
             }
         },
         jshint: {
@@ -69,6 +73,8 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['compass', 'uglify', 'cssmin']);
     grunt.registerTask('jshint', ['jshint']);
 
+    // Run default task when grun start. Really useful with grunt watch by default.
+    grunt.task.run('default');
     grunt.event.on('watch', function(action, filepath, target) {
         grunt.log.writeln(target + ': ' + filepath + ' has ' + action);
     });
